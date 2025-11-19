@@ -1,0 +1,73 @@
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunich </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="imagens/teemo.png">
+</head>
+
+<body>
+  <header>
+   <div class="logo-container">
+    <a href="/index.html"><img src="/imagens/logo.png" class="logo" alt="logo, personagem Teemo" style="width: 75px; height: 75px;"></a>
+    <h1 style="margin-left: 20px;">Kunich</h1>
+  </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  <nav class="navbar">
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/index.html">Início</a></li>
+      <li><a href="#">Filmes</a></li>
+      <li><a href="#">Animes</a></li>
+      <li><a href="#">Configurações</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+   <div id="config-panel" class="config-panel">
+        <button id="close-config" class="close-btn">✕</button>
+        <h2>Configurações</h2>
+        <p>sem muitas configurações...</p>
+
+        <!-- PRIMEIRA CONFIG: Tema -->
+        <div class="config-item">
+            <label for="theme-toggle">Tema escuro:</label>
+            <input type="checkbox" id="theme-toggle">
+        </div>
+    </div>
+    
+  <main>
+    <div class="container">
+    <h2>Fale Conosco</h2>
+    <p>Envie sua mensagem, sugestão ou dúvida. Retornarei assim que possível!</p>
+
+    <form action="" method="get">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required placeholder="Coloque seu nome">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Coloque seu email">
+
+      <label for="msg">Mensagem:</label>
+      <textarea name="msg" id="msg" class="c-m" required placeholder="Digite sua mensagem aqui"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    </div>
+
+
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 Grupo Chaves para atividade final de T.I... Todos os direitos reservados.
+  </footer>
+  <script src="/script.js"></script>
+</body>

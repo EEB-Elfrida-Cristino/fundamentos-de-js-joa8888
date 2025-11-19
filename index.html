@@ -1,11 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kunich </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/teemo.png">
 </head>
+
 <body>
-    
+    <header>
+        <div class="logo-container">
+            <a href="/index.html"><img src="imagens/logo.png" class="logo" alt="logo, personagem Teemo"
+                    style="width: 75px; height: 75px;"></a>
+            <h1 style="margin-left: 20px;">Kunich</h1>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Jogos</a></li>
+            <li><a href="#">Configurações</a></li>
+            <li><a href="/contato/contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div id="config-panel" class="config-panel">
+        <button id="close-config" class="close-btn">✕</button>
+        <h2>Configurações</h2>
+        <p>sem muitas configurações...</p>
+
+        <!-- PRIMEIRA CONFIG: Tema -->
+        <div class="config-item">
+            <label for="theme-toggle">Tema escuro:</label>
+            <input type="checkbox" id="theme-toggle">
+        </div>
+    </div>
+
+    <main>
+        <section class="anime-section">
+            <h2 class="anime-title">Lista de Animes Recomendados</h2>
+
+            <div class="anime-list">
+
+                <!-- 1 -->
+                <div class="anime-card madoka">
+                    <img src="/imagens/madoka.jpg" alt="Puella Magi Madoka Magica">
+                    <div class="anime-info">
+                        <h3>Puella Magi Madoka Magica</h3>
+                        <p><strong>Descrição:</strong> Madoka é uma garota comum que recebe a chance de se tornar uma
+                            garota mágica, mas descobre que esse mundo é muito mais sombrio do que parece.</p>
+                        <p><strong>Gênero:</strong> Drama, Psicológico, Magia, Suspense.</p>
+                        <p><strong>Ano:</strong> 2011</p>
+                        <p><strong>Criadores:</strong> Gen Urobuchi (roteiro), Akiyuki Shinbo (direção); Estúdio Shaft.
+                        </p>
+                        <p><strong>Onde assistir:</strong> Crunchyroll.</p>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="anime-card frieren">
+                    <img src="/imagens/frieren.jpg" alt="Frieren: Beyond Journey’s End">
+                    <div class="anime-info">
+                        <h3>Frieren: Beyond Journey’s End</h3>
+                        <p><strong>Descrição:</strong> Após derrotar o Rei Demônio, a elfa Frieren busca compreender os
+                            sentimentos humanos e o valor do tempo.</p>
+                        <p><strong>Gênero:</strong> Fantasia, Drama, Aventura.</p>
+                        <p><strong>Ano:</strong> 2023</p>
+                        <p><strong>Criadores:</strong> Kanehito Yamada, Tsukasa Abe; Estúdio Madhouse.</p>
+                        <p><strong>Onde assistir:</strong> Crunchyroll.</p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="anime-card apothecary">
+                    <img src="/imagens/apotecaria.jpg" alt="The Apothecary Diaries">
+                    <div class="anime-info">
+                        <h3>The Apothecary Diaries</h3>
+                        <p><strong>Descrição:</strong> Maomao, uma jovem farmacêutica, é levada ao palácio e começa a
+                            resolver mistérios com seu conhecimento químico.</p>
+                        <p><strong>Gênero:</strong> Mistério, Drama histórico, Slice of Life.</p>
+                        <p><strong>Ano:</strong> 2023</p>
+                        <p><strong>Criadores:</strong> Natsu Hyuuga; Estúdios OLM e Toho Animation.</p>
+                        <p><strong>Onde assistir:</strong> Crunchyroll.</p>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="anime-card aot">
+                    <img src="/imagens/eren.jpg" alt="Attack on Titan">
+                    <div class="anime-info">
+                        <h3>Attack on Titan</h3>
+                        <p><strong>Descrição:</strong> A humanidade luta contra titãs gigantes enquanto segredos do
+                            mundo são revelados.</p>
+                        <p><strong>Gênero:</strong> Ação, Drama, Fantasia Sombria.</p>
+                        <p><strong>Ano:</strong> 2013</p>
+                        <p><strong>Criadores:</strong> Hajime Isayama; Wit Studio e MAPPA.</p>
+                        <p><strong>Onde assistir:</strong> Crunchyroll, Netflix.</p>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="anime-card kimetsu">
+                    <img src="/imagens/tanjiro.jpg" alt="Demon Slayer">
+                    <div class="anime-info">
+                        <h3>Demon Slayer</h3>
+                        <p><strong>Descrição:</strong> Tanjiro se une aos Caçadores de Demônios para salvar sua irmã e
+                            vingar sua família.</p>
+                        <p><strong>Gênero:</strong> Ação, Fantasia, Drama.</p>
+                        <p><strong>Ano:</strong> 2019</p>
+                        <p><strong>Criadores:</strong> Koyoharu Gotouge; Ufotable.</p>
+                        <p><strong>Onde assistir:</strong> Crunchyroll, Netflix.</p>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="anime-card drstone">
+                    <img src="/imagens/drstone.jpg" alt="Dr. Stone">
+                    <div class="anime-info">
+                        <h3>Dr. Stone</h3>
+                        <p><strong>Descrição:</strong> Após a humanidade ser petrificada, Senku tenta reconstruir a
+                            civilização usando ciência.</p>
+                        <p><strong>Gênero:</strong> Ficção Científica, Aventura.</p>
+                        <p><strong>Ano:</strong> 2019</p>
+                        <p><strong>Criadores:</strong> Riichiro Inagaki, Boichi; TMS Entertainment.</p>
+                        <p><strong>Onde assistir:</strong> Crunchyroll.</p>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="anime-card deathnote">
+                    <img src="/imagens/deathnote.jpg" alt="Death Note">
+                    <div class="anime-info">
+                        <h3>Death Note</h3>
+                        <p><strong>Descrição:</strong> Light Yagami descobre um caderno mortal e entra em uma guerra
+                            intelectual com L.</p>
+                        <p><strong>Gênero:</strong> Suspense, Mistério, Psicológico.</p>
+                        <p><strong>Ano:</strong> 2006</p>
+                        <p><strong>Criadores:</strong> Tsugumi Ohba, Takeshi Obata; Madhouse.</p>
+                        <p><strong>Onde assistir:</strong> Netflix.</p>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="anime-card onepiece">
+                    <img src="/imagens/onepiece.jpg" alt="One Piece">
+                    <div class="anime-info">
+                        <h3>One Piece</h3>
+                        <p><strong>Descrição:</strong> Luffy e sua tripulação buscam o lendário tesouro enquanto
+                            enfrentam inimigos e criam laços.</p>
+                        <p><strong>Gênero:</strong> Ação, Aventura, Comédia.</p>
+                        <p><strong>Ano:</strong> 1999</p>
+                        <p><strong>Criadores:</strong> Eiichiro Oda; Toei Animation.</p>
+                        <p><strong>Onde assistir:</strong> Crunchyroll, Netflix.</p>
+                    </div>
+                </div>
+
+                <!-- 9 -->
+                <div class="anime-card jujutsu">
+                    <img src="/imagens/jujutsu.jpg" alt="Jujutsu Kaisen">
+                    <div class="anime-info">
+                        <h3>Jujutsu Kaisen</h3>
+                        <p><strong>Descrição:</strong> Itadori luta contra maldições após engolir um artefato
+                            amaldiçoado.</p>
+                        <p><strong>Gênero:</strong> Ação, Sobrenatural, Fantasia.</p>
+                        <p><strong>Ano:</strong> 2020</p>
+                        <p><strong>Criadores:</strong> Gege Akutami; MAPPA.</p>
+                        <p><strong>Onde assistir:</strong> Crunchyroll.</p>
+                    </div>
+                </div>
+
+                <!-- 10 -->
+                <div class="anime-card yourname">
+                    <img src="/imagens/yourname.jpg" alt="Your Name">
+                    <div class="anime-info">
+                        <h3>Your Name</h3>
+                        <p><strong>Descrição:</strong> Dois jovens trocam de corpo misteriosamente e tentam se
+                            encontrar.</p>
+                        <p><strong>Gênero:</strong> Filme; Romance, Fantasia, Drama.</p>
+                        <p><strong>Ano:</strong> 2016</p>
+                        <p><strong>Criadores:</strong> Makoto Shinkai; CoMix Wave Films.</p>
+                        <p><strong>Onde assistir:</strong> Netflix.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        &copy; 2025 Grupo Chaves para atividade final de T.I... Todos os direitos reservados.
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
+
+<!--
+    git add .
+    git commit -m "primeiro commit"
+    git push origin main  
+-->
