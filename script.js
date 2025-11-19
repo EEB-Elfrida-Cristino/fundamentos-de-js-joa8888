@@ -3,16 +3,13 @@ const navMenu = document.getElementById('nav-menu');
 const configPanel = document.getElementById('config-panel');
 const closeConfig = document.getElementById('close-config');
 
-// PEGAR O SWITCH DO TEMA (o erro estava aqui)
 const themeToggle = document.getElementById('theme-toggle');
 
-// Abre/fecha menu
 hamburger.addEventListener('click', () => {
   navMenu.classList.toggle('active');
   hamburger.classList.toggle('active'); 
 });
 
-// Botão configurações
 const configButton = navMenu.querySelector('li:nth-child(4) a');
 
 configButton.addEventListener('click', (event) => {
@@ -24,7 +21,6 @@ configButton.addEventListener('click', (event) => {
   configPanel.classList.add('active');
 });
 
-// Fechar painel
 closeConfig.addEventListener('click', () => {
   configPanel.classList.remove('active');
 });
@@ -32,7 +28,6 @@ closeConfig.addEventListener('click', () => {
 
 // ---------- SISTEMA DE TEMA ----------
 
-// Puxar tema salvo
 if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-theme");
     themeToggle.checked = true;
@@ -40,7 +35,6 @@ if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("light-theme");
 }
 
-// Alternar tema ao clicar no switch
 themeToggle.addEventListener('change', () => {
     if (themeToggle.checked) {
         document.body.classList.add("dark-theme");
